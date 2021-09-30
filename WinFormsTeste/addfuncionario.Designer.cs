@@ -55,6 +55,8 @@ namespace WinFormsTeste
             this.btn_editar = new System.Windows.Forms.Button();
             this.btn_apagar = new System.Windows.Forms.Button();
             this.label_codigo = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txt_codigo = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -146,7 +148,7 @@ namespace WinFormsTeste
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(229, 157);
+            this.label5.Location = new System.Drawing.Point(198, 157);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(62, 21);
             this.label5.TabIndex = 10;
@@ -154,7 +156,7 @@ namespace WinFormsTeste
             // 
             // maskedTextBox_cel
             // 
-            this.maskedTextBox_cel.Location = new System.Drawing.Point(297, 149);
+            this.maskedTextBox_cel.Location = new System.Drawing.Point(266, 149);
             this.maskedTextBox_cel.Mask = "(00)00000-0000";
             this.maskedTextBox_cel.Name = "maskedTextBox_cel";
             this.maskedTextBox_cel.Size = new System.Drawing.Size(100, 29);
@@ -294,11 +296,29 @@ namespace WinFormsTeste
             this.label_codigo.Size = new System.Drawing.Size(0, 21);
             this.label_codigo.TabIndex = 26;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(383, 157);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(63, 21);
+            this.label11.TabIndex = 27;
+            this.label11.Text = "Codigo:";
+            // 
+            // txt_codigo
+            // 
+            this.txt_codigo.Location = new System.Drawing.Point(452, 149);
+            this.txt_codigo.Name = "txt_codigo";
+            this.txt_codigo.Size = new System.Drawing.Size(73, 29);
+            this.txt_codigo.TabIndex = 28;
+            // 
             // addfuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(537, 351);
+            this.ClientSize = new System.Drawing.Size(537, 369);
+            this.Controls.Add(this.txt_codigo);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.label_codigo);
             this.Controls.Add(this.btn_apagar);
             this.Controls.Add(this.btn_editar);
@@ -362,5 +382,9 @@ namespace WinFormsTeste
         private System.Windows.Forms.Button btn_apagar;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label_codigo;
+        private System.Windows.Forms.TextBox txt_num;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txt_cadastro;
+        private System.Windows.Forms.TextBox txt_codigo;
     }
 }
