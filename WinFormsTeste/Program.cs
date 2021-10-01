@@ -17,7 +17,7 @@ namespace WinFormsTeste
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new addfuncionario());
+            Application.Run(new Form1());
         }
     }
 }

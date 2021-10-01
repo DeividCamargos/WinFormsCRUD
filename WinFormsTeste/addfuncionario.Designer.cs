@@ -29,6 +29,7 @@ namespace WinFormsTeste
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(addfuncionario));
             this.label1 = new System.Windows.Forms.Label();
             this.txt_nome = new System.Windows.Forms.TextBox();
             this.btn_add = new System.Windows.Forms.Button();
@@ -77,10 +78,14 @@ namespace WinFormsTeste
             // 
             // btn_add
             // 
+            this.btn_add.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_add.BackgroundImage")));
+            this.btn_add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_add.CausesValidation = false;
+            this.btn_add.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_add.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_add.Location = new System.Drawing.Point(29, 3);
             this.btn_add.Name = "btn_add";
+            this.btn_add.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btn_add.Size = new System.Drawing.Size(70, 70);
             this.btn_add.TabIndex = 2;
             this.btn_add.Text = "ADD";
@@ -238,8 +243,12 @@ namespace WinFormsTeste
             // 
             // btn_salvar
             // 
+            this.btn_salvar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_salvar.BackgroundImage")));
+            this.btn_salvar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_salvar.CausesValidation = false;
+            this.btn_salvar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_salvar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_salvar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_salvar.Location = new System.Drawing.Point(105, 3);
             this.btn_salvar.Name = "btn_salvar";
             this.btn_salvar.Size = new System.Drawing.Size(70, 70);
@@ -251,7 +260,10 @@ namespace WinFormsTeste
             // 
             // btn_buscar
             // 
+            this.btn_buscar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_buscar.BackgroundImage")));
+            this.btn_buscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_buscar.CausesValidation = false;
+            this.btn_buscar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_buscar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_buscar.Location = new System.Drawing.Point(181, 3);
             this.btn_buscar.Name = "btn_buscar";
@@ -264,7 +276,10 @@ namespace WinFormsTeste
             // 
             // btn_editar
             // 
+            this.btn_editar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_editar.BackgroundImage")));
+            this.btn_editar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_editar.CausesValidation = false;
+            this.btn_editar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_editar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_editar.Location = new System.Drawing.Point(257, 3);
             this.btn_editar.Name = "btn_editar";
@@ -277,8 +292,12 @@ namespace WinFormsTeste
             // 
             // btn_apagar
             // 
+            this.btn_apagar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_apagar.BackgroundImage")));
+            this.btn_apagar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_apagar.CausesValidation = false;
+            this.btn_apagar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_apagar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_apagar.ForeColor = System.Drawing.Color.Black;
             this.btn_apagar.Location = new System.Drawing.Point(333, 3);
             this.btn_apagar.Name = "btn_apagar";
             this.btn_apagar.Size = new System.Drawing.Size(70, 70);
@@ -316,7 +335,7 @@ namespace WinFormsTeste
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(537, 369);
+            this.ClientSize = new System.Drawing.Size(537, 335);
             this.Controls.Add(this.txt_codigo);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label_codigo);
